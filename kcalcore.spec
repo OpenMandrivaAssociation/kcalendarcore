@@ -28,10 +28,10 @@ BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(LibIcal)
-Obsoletes: %mklibname akonadi-calendar 4
-Obsoletes: %mklibname kcalcore 4
-Obsoletes: %mklibname akonadi-kcal 4
-Obsoletes: %mklibname kcal 4
+Obsoletes: %{mklibname akonadi-calendar 4}
+Obsoletes: %{mklibname kcalcore 4}
+Obsoletes: %{mklibname akonadi-kcal 4}
+Obsoletes: %{mklibname kcal 4}
 
 %description
 KDE library for handling calendar data
