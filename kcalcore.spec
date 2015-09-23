@@ -26,6 +26,7 @@ BuildRequires: cmake(KF5KDELibs4Support)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
+BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(LibIcal)
 Obsoletes: %{mklibname akonadi-calendar 4}
