@@ -1,4 +1,2 @@
-removed_sources:
-  kcalcore-15.08.0.tar.xz: 6ed748d61ed2c9ca872c1d53bcdc3521737cdab7
 sources:
-  kcalcore-15.12.3.tar.xz: 2b3c680d7623a63c85069a5b5fbaf36dc7fb2d50
+  kcalcore-16.04.0.tar.xz: 3a0352abbae209866bf67ec32abbf02fd7f9c674
