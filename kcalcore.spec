@@ -16,8 +16,6 @@ Summary: KDE library for handling calendar data
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
 BuildRequires: cmake(KF5Codecs)
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5CoreAddons)
@@ -28,7 +26,7 @@ BuildRequires: cmake(Qt5DBus)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(ECM)
-BuildRequires: cmake(LibIcal)
+BuildRequires: pkgconfig(libical)
 Obsoletes: %{mklibname akonadi-calendar 4}
 Obsoletes: %{mklibname kcalcore 4}
 Obsoletes: %{mklibname akonadi-kcal 4}
