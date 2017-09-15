@@ -16,6 +16,7 @@ Summary: KDE library for handling calendar data
 URL: http://kde.org/
 License: GPL
 Group: System/Libraries
+BuildRequires: bison
 BuildRequires: cmake(KF5Codecs)
 BuildRequires: cmake(KF5Config)
 BuildRequires: cmake(KF5CoreAddons)
