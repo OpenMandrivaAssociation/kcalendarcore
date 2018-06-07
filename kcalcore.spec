@@ -3,14 +3,14 @@
 %define devname %mklibname KF5CalendarCore -d
 
 Name: kcalcore
-Version:	 17.12.2
+Version:	 18.04.2
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
 %else
 %define ftpdir stable
 %endif
-Release:	2
+Release:	1
 Source0: http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
 Summary: KDE library for handling calendar data
 URL: http://kde.org/
@@ -62,6 +62,8 @@ Development files (Headers etc.) for %{name}.
 %ninja_install -C build
 
 %files -n %{libname}
+%{_sysconfdir}/xdg/kcalcore.categories
+%{_sysconfdir}/xdg/kcalcore.renamecategories
 %{_libdir}/*.so.%{major}*
 
 %files -n %{devname}
