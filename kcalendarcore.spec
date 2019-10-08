@@ -1,17 +1,12 @@
 %define major 5
 %define libname %mklibname KF5CalendarCore %{major}
 %define devname %mklibname KF5CalendarCore -d
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
-Name: kcalcore
-Version:	19.08.1
-%define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
-%if %{is_beta}
-%define ftpdir unstable
-%else
-%define ftpdir stable
-%endif
+Name: kcalendarcore
+Version:	5.63.0
 Release:	1
-Source0: http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0: http://download.kde.org/%{stable}/frameworks/%(echo %{version} |cut -d. -f1-2)/%{name}-%{version}.tar.xz
 Summary: KDE library for handling calendar data
 URL: http://kde.org/
 License: GPL
@@ -71,3 +66,4 @@ Development files (Headers etc.) for %{name}.
 %{_libdir}/*.so
 %{_libdir}/cmake/*
 %{_libdir}/qt5/mkspecs/modules/*.pri
+%{_docdir}/qt5/KF5CalendarCore.*
