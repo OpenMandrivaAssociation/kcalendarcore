@@ -23,6 +23,7 @@ BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(ECM)
 BuildRequires: pkgconfig(libical)
+BuildRequires: doxygen qt5-doc qt5-qttools qdoc5
 Obsoletes: %{mklibname akonadi-calendar 4}
 Obsoletes: %{mklibname kcalcore 4}
 Obsoletes: %{mklibname akonadi-kcal 4}
